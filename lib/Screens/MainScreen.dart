@@ -39,7 +39,8 @@ class _MainScreenState extends State<MainScreen> {
   }
 
   Future<bool> _loadMore() async {
-    await Future.delayed(const Duration(seconds:2));
+    await Future.delayed(const Duration(seconds:1, milliseconds: 500)); // delay to be able to see the loader
+
     load();
     return true;
   }
